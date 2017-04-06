@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Just Java</string>
+    <string name="caramel_syrup">Jarabe de Caramelo</string>
+    <string name="caramel_syrup_cost">0.75</string>
+    <string name="chocolate_sprinkles">Chispas de Chocolate</string>
+    <string name="chocolate_sprinkles_cost">0.50</string>
+    <string name="enter_email">Ingrese su Correo Electrónico</string>
+    <string name="enter_name">Ingrese su Nombre</string>
+    <string name="extras">Extras</string>
+    <string name="minus">-</string>
+    <string name="order_button">Ordernar</string>
+    <string name="plus">+</string>
+    <string name="quantity">Cantidad</string>
+    <string name="starting_total">€0</string>
+    <string name="total">Precio Total</string>
+    <string name="whipped_cream">Crema Batida</string>
+    <string name="whipped_cream_cost">0.50</string>
+    <string name="email_summary_body">
+        Saludos <xliff:g id="name" example="Reggie">%s</xliff:g>,
+        \n\nAqui  están los detalles :
+        \nCantidad: <xliff:g id="quantity" example="2">%s</xliff:g>
+        \n<xliff:g id="extras_options" example="Crema Batida">%s</xliff:g>
+        \nPrecio Total: <xliff:g id="total_cost" example="€10">%s</xliff:g>
+        \n\nGracias por tu ordenado!
+    </string>
+    <string name="email_summary_subject">
+        <xliff:g id="name" example="Reggie">%s</xliff:g>, Tu Recibo de Just Java:
+    </string>
+</resources>

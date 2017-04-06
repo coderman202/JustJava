@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/main_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText style="@style/Number"
+            android:id="@+id/name"
+            android:hint="@string/enter_name"
+            android:textColorHint="@color/gray_text"
+            android:inputType="textCapWords"/>
+
+        <EditText style="@style/Number"
+            android:id="@+id/email"
+            android:hint="@string/enter_email"
+            android:textColorHint="@color/gray_text"
+            android:inputType="textEmailAddress"/>
+
+        <TextView style="@style/TextView"
+            android:text="@string/extras" />
+
+        <CheckBox style="@style/CheckBox"
+            android:id="@+id/whipped_cream"
+            android:text="@string/whipped_cream"
+            android:tag="@string/whipped_cream_cost"
+            android:onClick="addExtras"/>
+
+        <CheckBox style="@style/CheckBox"
+            android:id="@+id/chocolate_sprinkles"
+            android:text="@string/chocolate_sprinkles"
+            android:tag="@string/chocolate_sprinkles_cost"
+            android:onClick="addExtras"/>
+
+        <CheckBox style="@style/CheckBox"
+            android:id="@+id/caramel_syrup"
+            android:text="@string/caramel_syrup"
+            android:tag="@string/caramel_syrup_cost"
+            android:onClick="addExtras"/>
+
+        <TextView style="@style/TextView"
+            android:text="@string/quantity" />
+
+        <LinearLayout
+            android:id="@+id/quantity_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button style="@style/PlusMinusButtons"
+                android:id="@+id/minus_button"
+                android:text="@string/minus"
+                android:onClick="decrement"/>
+
+            <TextView style="@style/Number"
+                android:id="@+id/quantity"/>
+
+            <Button style="@style/PlusMinusButtons"
+                android:id="@+id/plus_button"
+                android:text="@string/plus"
+                android:onClick="increment"/>
+
+        </LinearLayout>
+
+        <TextView style="@style/TextView"
+            android:text="@string/total" />
+
+        <TextView style="@style/Number"
+            android:id="@+id/total" />
+
+        <Button style="@style/Button"
+            android:id="@+id/order_button"
+            android:text="@string/order_button"
+            android:onClick="submitOrder"/>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
